@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>newadd</title>
+</head>
+<body>
+    <div style="text-align: center; font-size: 25pt;">請輸入新商品</div>
+    <div align="center">
+        <form method="post" action="newadd.py" target="id_iframe">
+            輸入ID:<input type="text" name='ID'><br>
+            輸入名稱:<input type="text" name='name'><br>
+            輸入價格:<input type="text" name='price'><br>
+            輸入數量:<input type="text" name='num'><br>
+        <input type="submit">
+        </form>
+        <iframe id="id_iframe" name="id_iframe" style="display:none;"></iframe>
+    </div>
+    <div align="center">
+        <button>
+            <a style="text-decoration:none"  href="manage.py">回管理端</a>
+        </button>
+    </div> 
+</body>
+</html>

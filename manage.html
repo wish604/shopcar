@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<style>/*css 將table放置正中間*/
+    table{
+        margin-left:auto; 
+        margin-right:auto;
+    }
+</style>
+<body>
+    
+    <div style="text-align: center; font-size: 25pt;">管理端</div>
+    <div align="center">
+        <form method="post" action="delproduct.py" target="id_iframe">
+        刪除編號ID:<input type='text' name='ID'><input type='submit'>
+        </form>
+        <iframe id="id_iframe" name="id_iframe" style="display:none;"></iframe>
+    </div>
+    <table border="3" width="600" align="center">
+        msg
+    </table>
+    <div style="text-align: center;">
+        <div style="width:990px; height:auto; float:left; display:inline"class="a">
+            <form method="post" action="change.py" >
+                更改商品:
+                <input type='text' name='ID'><input type='submit'>
+            </form>
+        </div>
+        <div style="width:auto; height:auto; float:left; display:inline"class="a">
+            <button>
+                <a style="text-decoration:none"  href="newadd.html">新增商品</a>
+            </button>
+        </div>   
+    </div>
+</body>
+</html>
